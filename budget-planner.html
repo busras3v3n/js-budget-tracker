@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Rubik+Doodle+Shadow&display=block" rel="stylesheet">
+    <link rel="stylesheet" href="css/budget-planner.css">
+</head>
+<body>
+    <div id="app">
+        <table class="budget-tracker">
+            <thead class="table-head">
+                <th>Date</th>
+                <th>Description</th>
+                <th>Type</th>
+                <th>Amount</th>
+                <th></th>
+            </thead>
+            <tbody class="entries">
+                
+            </tbody>
+            <tbody>
+                <tr>
+                    <td colspan="5" class="control">
+                        <button type="button" class="new-entry">New entry</button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5" class="incomes">
+                        <strong>Total Income:</strong>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span class="total-amount" class="income-text" id="incometotal">2974892174</span>
+                    </td>
+                    <td colspan="5" class="expenses" class="expense-text">
+                        <strong>Total Expense:</strong>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span class="total-amount" id="expensetotal">2974892174</span>
+                    </td>
+                    <td colspan="5" class="summary" class="total-text">
+                        <strong>Total:</strong>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span class="total-amount" id="total">2974892174</span>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    
+</body>
+<script src="js/main.js"></script>
+</html>

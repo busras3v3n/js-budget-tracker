@@ -1,0 +1,85 @@
+body{
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+#app{
+        background-color: #F0ECE5;
+        width: fit-content;
+        height: fit-content;
+        padding-top: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 30px;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 60px;
+}
+
+.incomes, .expenses, .summary{
+    display: flex;
+    background-color: #31304D;
+    color: #F0ECE5;
+    width: fit-content;
+    flex-direction: row;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+.input-text{
+    width: 300px;
+}
+
+.budget-tracker{
+    border-collapse: collapse;
+    min-width: 750px;
+    margin: auto;
+    margin-top: 40px;
+
+}
+
+.budget-tracker th{ 
+    text-align: left;
+    padding: 10px, 20px;
+    border-bottom: 3px solid #31304D;
+
+}
+
+.budget-tracker td{
+    margin-top: 30px;
+    padding: 5px;
+
+}
+
+.budget-tracker{
+    font-family: Lato;
+}
+
+.input, .delete-button{
+    height: 30px;
+    font-size: 13px;
+    padding: 0, 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.delete-button{
+    width: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.delete-button:hover{
+    background-color: #31304D;
+    color: #F0ECE5;
+}
+
+.table-head{
+    visibility: hidden;
+}
