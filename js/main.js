@@ -11,7 +11,6 @@ let newButton = document.querySelector(".new-entry");
 let tbody = document.querySelector(".entries");
 
 newButton.addEventListener("click", addNew);
-newButton.addEventListener("click", saveToLocal);
 
 function addNew(){
     document.querySelector(".table-head").style.visibility = "visible";
@@ -38,7 +37,6 @@ function addNew(){
 
 
     tbody.appendChild(newEntry);
-    saveToLocal();
 
     let deleteButton = newEntry.querySelector(".delete-button");
         deleteButton.addEventListener('click', function (event){
@@ -80,10 +78,6 @@ amountsArray.forEach(amountInput => {
     document.querySelector("#expensetotal").innerHTML = expenseCalculation;
     document.querySelector("#incometotal").innerHTML = incomeCalculation;
     document.querySelector("#total").innerHTML = totalCalculation;
-
-}
-
-function saveToLocal(){
 
 }
 
